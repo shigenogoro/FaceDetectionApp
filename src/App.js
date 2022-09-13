@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
@@ -54,7 +53,7 @@ const particlesOptions = {
                 default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 1,
             straight: false,
         },
         number: {
