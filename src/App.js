@@ -11,6 +11,21 @@ import './App.css';
 
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            input: ''
+        }
+    }
+
+    onInputChange = (events) => {
+        console.log(events.target.value);
+    }
+    
+    onButtonSubmit = (events) => {
+        console.log('Click');
+    }
+
     render() {
         return(
             <div>
@@ -18,7 +33,10 @@ class App extends Component {
                 <Navigation />
                 <Logo />
                 <Rank />
-                <ImageLinkForm />
+                <ImageLinkForm 
+                    onInputChange={this.onInputChange} 
+                    onButtonSubmit={this.onButtonSubmit}
+                />
             </div>
         )
     }
